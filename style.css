@@ -11,18 +11,19 @@
 
 header {
     position: fixed;
-    top: 1rem;
-    left: 50%;
-    transform: translate(-50%);
+    width: 100%;
+    /* top: 1rem; */
+    /* left: 50%; */
+    /* transform: translate(-50%); */
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-evenly;
+    /* gap: 5rem; */
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(8px);
     color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: 3rem;
+    padding: 1rem 1.5rem;
+    /* border-radius: 1rem; */
     z-index: 9999;
 }
 
@@ -45,6 +46,7 @@ header {
 
 li a {
     position: relative;
+    color: #fff;
 }
 
 li a::before {
@@ -62,3 +64,82 @@ li a::before {
 li a:hover::before {
     width: 100%;
 }
+
+.visit-btn {
+    padding: 0.5rem 1.3rem;
+    text-wrap: nowrap;
+    border: none;
+    border-radius: .8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background: linear-gradient(to top, rgb(0, 157, 255), rgb(255, 0, 255));
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.visit-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, rgb(0, 157, 255), rgb(255, 0, 255));
+}
+
+#menu-icon{
+    font-size: 2rem;
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 8rem 10%;
+    width: 100%;
+    position: relative;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.about img {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: .5rem;
+}
+
+.info-box h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.info-box span {
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+}
+
+
