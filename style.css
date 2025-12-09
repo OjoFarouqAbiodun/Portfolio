@@ -142,4 +142,15 @@ section {
     font-size: 1.5rem;
 }
 
+.btn-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    cursor: pointer;
+}
 
